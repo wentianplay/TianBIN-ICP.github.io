@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- ============================================================
+  萌ICP备案 | 介绍页
+  说明：
+  1. 视觉与脚本结构完全沿用示例 A，保证同一观感与交互。
+  2. 仅替换了：<title>、<meta> 描述、Header 文案、正文链接、Footer 版权行。
+  3. 如需修改背景图 / 字体等，只要调整 assets/* 或行内 <style> 块即可。
+============================================================ -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>萌ICP备案 | MOE·ICP</title>
+    <meta name="description" content="萌ICP备案（MOE·ICP）—— 萌友网站联萌，为热爱萌文化的站长提供一个萌萌的“备案号”。" />
+    <meta name="keywords" content="萌ICP备, icp.gov.moe, 萌备, 萌文化, 二次元" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- 站点图标，可替换为自己 Logo -->
+    <link rel="icon" href="https://icp.gov.moe/images/ico64.png" type="image/png" />
+
+    <!-- 公用样式（示例 A 中的 main.css） -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- === 针对 Footer 的覆盖样式 === -->
+    <style>
+        #footer {
+            height: auto !important;
+            line-height: 1.6em !important;
+            padding: 1em 2em !important;
+            z-index: 1000;
+        }
+
+        #footer p {
+            margin: 0.5em 0 !important;
+        }
+
+        #footer .disclaimer {
+            font-size: .9em;
+            color: #aaa;
+        }
+
+        #footer small {
+            font-size: .85em;
+            color: #ccc;
+        }
+    </style>
+
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- 可选：Baidu·Analytics（保持原有脚本） -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?95a55d866fa8eb12fcee0d8fac240d7c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- 处理 bfcache 返回的刷新 -->
+    <script>
+        window.onpageshow = function(event) {
+            if (event.persisted) location.reload();
+        };
+    </script>
+</head>
+
+<body class="is-preload">
+    <!-- 兼容 Safari PWA 的隐藏 favicon 预先加载 -->
+    <img width="0" src="https://icp.gov.moe/images/ico64.png" alt="favicon" />
+
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+
+        <div id="main">
+            <!-- ========== Header ========== -->
+            <header id="header">
+                <h1>萌ICP备案 <small style="font-size:.6em">（MOE·ICP）</small></h1>
+                <p>萌友网站联萌 · 次元中的文化与爱好展示</p>
+
+                <p>
+                    <a href="https://icp.gov.moe" target="_blank">萌ICP备案主页 →</a><br />
+                    <a href="https://icp.gov.moe/join.php" target="_blank">立即申请 / 加入萌备 →</a>
+                </p>
+            </header>
+
+            <!-- ========== 主文案（可按需扩充为多段） ========== -->
+            <section id="content" style="max-width:900px;margin:2.5em auto;text-align:left;color:#eee;">
+                <h2>什么是萌ICP备案？</h2>
+                <p>
+                    萌ICP备案（简称「萌备」）是一个<strong>纯属萌友自发</strong>的站长联萌计划。<br> 只要你的网站热爱萌文化、ACG·次元氛围，即可在页脚挂上专属
+                    <code>&lt;萌ICP备××号&gt;</code>，链接回查询系统，成为这个虚拟萌国的一员。
+                </p>
+                <h3>加入步骤</h3>
+                <ol>
+                    <li>访问 <a href="https://icp.gov.moe/join.php" target="_blank">申请页面</a> 填写站点信息；</li>
+                    <li>获取分配到的「萌备案号」及示例代码；</li>
+                    <li>把代码粘贴到你网页的 <code>&lt;footer&gt;</code> 位置；</li>
+                    <li>提交审核，静候系统自动生效 —— 就这么简单！</li>
+                </ol>
+                <p class="disclaimer">
+                    提示：萌备仅代表兴趣联萌，<u>并非</u>政府机关的 ICP 正式备案，请勿与法律意义上的备案混淆。
+                </p>
+            </section>
+
+            <!-- ========== Footer ========== -->
+            <footer id="footer">
+                <p>
+                    <b>
+            &copy; <script>document.write(new Date().getFullYear());</script>
+            <a href="https://icp.gov.moe" target="_blank">MOE·ICP 联萌</a><img width="20px" height="auto" src="https://icp.gov.moe/images/ico64.png"><a href="https://icp.gov.moe/?keyword=20251000" target="_blank">萌ICP备20251000号</a>     
+          </b><br/>
+                    <span class="disclaimer">
+            萌即正义· 请共同维护一个友善、合法、健康的网络环境。
+          </span><br/>
+                    <small>
+      Powered by 
+      <a href="https://icp.gov.moe" target="_blank" rel="noopener">ICP.GOV.MOE</a>
+      &amp; 
+      <a href="https://moe.one" target="_blank" rel="noopener">MOE.ONE Community</a>
+      ❤️
+    </small>
+                </p>
+            </footer>
+        </div>
+        <!-- /#main -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- 保持示例 A 的脚本行为 -->
+    <script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
+    <script>
+        window.onload = () => document.body.classList.remove("is-preload");
+        window.ontouchmove = () => false;
+        window.onorientationchange = () => {
+            document.body.scrollTop = 0;
+        };
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4baa36b32cee4dce9ffb3518779fe5da","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
