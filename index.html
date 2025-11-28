@@ -7,7 +7,19 @@
   2. 仅替换了：<title>、<meta> 描述、Header 文案、正文链接、Footer 版权行。
   3. 如需修改背景图 / 字体等，只要调整 assets/* 或行内 <style> 块即可。
 ============================================================ -->
-
+<script>
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "F12") {
+            e.preventDefault();
+        }
+    });
+    document.addEventListener("copy", function(e) {
+        e.preventDefault();
+    });
+</script>
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -27,21 +39,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <!-- === 针对 Footer 的覆盖样式 === -->
-    <script>
-        document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-        });
-
-        document.addEventListener("keydown", function(e) {
-            if (e.key === "F12") {
-                e.preventDefault();
-            }
-        });
-
-        document.addEventListener("copy", function(e) {
-            e.preventDefault();
-        });
-    </script><style>
+      <style>
         #footer {
             height: auto !important;
             line-height: 1.6em !important;
@@ -101,7 +99,7 @@
 
                 <p>
                     <a href="https://icp.wentianplay.top" target="_blank">彬ICP备案主页 →</a><br />
-                    <a href="https://icp.wentianplay.top" target="_blank">立即申请 / 加入彬备 →</a>
+                    <a href="mailto:icp@wentianplay.top?subject=天彬ICP备案注册申请&body=探险者，请提供以下信息：%0D%0A1. 备案域名：%0D%0A2. 网站性质：%0D%0A3. 申请人名：%0D%0A4. 联系方式：" target="_blank">立即申请 / 加入彬备 →</a>
                 </p>
             </header>
 
@@ -129,7 +127,7 @@
                 <p>
                     <b>
             &copy; <script>document.write(new Date().getFullYear());</script>
-            <a href="https://icp.wentianplay.top" target="_blank">TianBIN·ICP 星辰协会</a><img width="20px" height="auto" src="https://www.WenTianPlay.net/favicon.ico"><a href="https://icp.wentianplay.top" target="_blank">彬ICP备20250331号</a>     
+            <a href="https://icp.wentianplay.top" target="_blank">TianBIN·ICP 星辰协会</a><img width="20px" height="auto" src="https://icp.wentianplay.top/favicon.ico"><a href="https://icp.wentianplay.top" target="_blank">彬ICP备20250331号</a>     
           </b><br/>
                     <span class="disclaimer">
             天彬即正义· 请共同维护一个友善、合法、健康的网络环境。
