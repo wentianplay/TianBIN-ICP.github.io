@@ -21,11 +21,11 @@ function detectDevTools() {
     };
     try {
         if (i || c()) {
-            window.location.href = "https://www.WenTianPlay.cn";
+            window.location.href = "https://www.WenTianPlay.com";
             return;
         }
     } catch (e) {
-        window.location.href = "https://www.WenTianPlay.cn";
+        window.location.href = "https://www.WenTianPlay.com";
     }
 }
 setInterval(detectDevTools, 500);
@@ -34,7 +34,7 @@ window.onload = function() {
 };
 document.onkeydown = function(e) {
     if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73) || (e.ctrlKey && e.shiftKey && e.keyCode === 74) || (e.ctrlKey && e.keyCode === 85)) {
-        window.location.href = "https://www.WenTianPlay.cn";
+        window.location.href = "https://www.WenTianPlay.com";
         return false;
     }
 };
